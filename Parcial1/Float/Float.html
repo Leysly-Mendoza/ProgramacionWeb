@@ -12,12 +12,12 @@
         .contenedor
         {
             background-color: blueviolet;
-            overflow:auto;
+            overflow:auto; /*controlar el desborde del flujo*/
         }
         
         .caja {
-            float: left;
-            width:100 px;
+            float: left; /*estarán alineadas horizontalmente */
+            width:100px;
             background-color: #4CAF50;
             color: white;
             padding: 20px; /* Espacio interno alrededor del contenido */
@@ -28,7 +28,7 @@
         }
         #caja4
         {
-            clear:left;
+            clear:left; /*comenzará en una nueva linea*/
         }
 
     </style>
@@ -39,11 +39,11 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus corporis quod debitis magnam ipsam totam itaque! Similique odit, doloribus neque fuga nemo provident nobis? Neque eius dolore quo aut.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus corporis quod debitis magnam ipsam totam itaque! Similique odit, doloribus neque fuga nemo provident nobis? Neque eius dolore quo aut.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus corporis quod debitis magnam ipsam totam itaque! Similique odit, doloribus neque fuga nemo provident nobis? Neque eius dolore quo aut.</p>
-        <div class="caja">Contenido de la caja</div>
-        <div class="caja">Caja 1 id="caja1"</div>
-        <div class="caja">Caja 2 id="caja2</div>
-        <div class="caja">Caja 3 id="caja3</div>
-        <div class="caja">Caja 4 id="caja4</div>
+        <div class="caja" id="caja1">Caja 1</div>
+        <div class="caja" id="caja2">Caja 2</div>
+        <div class="caja" id="caja3">Caja 3</div>
+        <div class="caja" id="caja4">Caja 4</div>
+
     </div>
 
 </body>
