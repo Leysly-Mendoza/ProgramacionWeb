@@ -5,38 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body
+        {
+            background-color: bisque   ;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
         *{
                 box-sizing: border-box;
                 margin: 0;
                 padding: 0;
                 
         }
-        #contenedor
+        /* Estilos para las imágenes en las orillas */
+        .imagen-orilla {
+            position: fixed;
+            width: 370px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .izquierda {
+            left: 50px;
+        }
+
+        .derecha {
+            right: 50px;
+        }
+        /*#contenedor
         {
             width:60%;
             margin: 0 auto;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             line-height: 1.7em;
-        }
-        img{
+            
+        }*/
+
+        /*img{
            display: box;
            margin: 0 auto;
            width:300px;
-           height:300px;
+           height:300px;       
+        }*/
+
+        /* Estilos para el título */
+        .titulo {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+        .texto {
+        position: sticky;
+        border: 5px solid #000;
+        padding: 20px;
+        text-align: center;
+        background-color: #fff;
+        width: 370px;
+        margin: auto;
+    
         }
     </style>
 </head>
 <body>
     <div id="contenedor">
-    <h1>HARRY POTTER Y EL PRISIONERO DE AZKABAN</h1>
-    <img src="HP.jpg" alt="Harry potter y el prisionero de Azkaban">; 
-    <p>
-        El libro fue publicado en el Reino Unido el 8 de julio de 1999 por la editorial Bloomsbury y en los Estados Unidos el 8 de septiembre por Scholastic.1​2​3​4​ Este fue el libro que más rápido escribió Rowling, pues lo terminó en tan solo un año después de comenzar a escribirlo. El libro vendió 68 mil copias en sus tres primeros días de lanzamiento en Reino Unido, y desde entonces ha conseguido vender 3 millones más.5​ El libro ganó el premio Whitbread Book Awards (ahora llamados Costa Books Awards) en 1999, el Premio Bram Stoker, el Premio Locus a la mejor novela de fantasía en 2000, entre otros.
-    </p>
-    
-    <p>
-        El prisionero de Azkaban narra los hechos que suceden a lo largo del tercer curso de su protagonista, Harry Potter, en el Colegio Hogwarts. Aunque en la novela no aparece el antagonista de la serie, lord Voldemort, la trama presenta una nueva situación de riesgo para el personaje central: Sirius Black, uno de los asesinos de Voldemort, se fuga de la prisión de Azkaban para asesinar a Harry y dejar el camino libre para el regreso de su amo al poder. Las autoridades de la comunidad mágica reaccionan ante la noticia cercando el colegio y otros lugares de su jurisdicción con los dementores, criaturas tenebrosas que ofician de carceleros en Azkaban.
-    </p>
+        <h1 class="titulo">HARRY POTTER Y EL PRISIONERO DE AZKABAN</h1>
+        <div class="texto">
+        <p>
+            El libro fue publicado en el Reino Unido el 8 de julio de 1999 por la editorial Bloomsbury y en los Estados Unidos el 8 de septiembre por Scholastic. Este fue el libro que más rápido escribió Rowling, pues lo terminó en tan solo un año después de comenzar a escribirlo. El libro vendió 68 mil copias en sus tres primeros días de lanzamiento en Reino Unido, y desde entonces ha conseguido vender 3 millones más.5​ El libro ganó el premio Whitbread Book Awards (ahora llamados Costa Books Awards) en 1999, el Premio Bram Stoker, el Premio Locus a la mejor novela de fantasía en 2000, entre otros.
+        </p>
+        
+        <p>
+            El prisionero de Azkaban narra los hechos que suceden a lo largo del tercer curso de su protagonista, Harry Potter, en el Colegio Hogwarts. Aunque en la novela no aparece el antagonista de la serie, lord Voldemort, la trama presenta una nueva situación de riesgo para el personaje central: Sirius Black, uno de los asesinos de Voldemort, se fuga de la prisión de Azkaban para asesinar a Harry y dejar el camino libre para el regreso de su amo al poder. Las autoridades de la comunidad mágica reaccionan ante la noticia cercando el colegio y otros lugares de su jurisdicción con los dementores, criaturas tenebrosas que ofician de carceleros en Azkaban.
+        </p>
+        </div>
+        </div>
+   
     </div>
+     <!-- Imágenes de las orillas -->
+     <img src="HP.jpg" class="imagen-orilla izquierda" alt="Harry potter y el prisionero de Azkaban">
+     <img src="HP1.jpg" class="imagen-orilla derecha" alt="Harry potter y el prisionero de Azkaban">
 </body>
 </html>
