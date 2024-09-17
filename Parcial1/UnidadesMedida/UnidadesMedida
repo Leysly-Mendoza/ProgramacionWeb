@@ -1,0 +1,67 @@
+# Tabla de Unidades en CSS
+
+## Unidades Absolutas
+| **Unidades**      | **Descripción**                        |
+|-------------------|----------------------------------------|
+| px, cm, mm, Q, in, pt, pc | Unidades estáticas o de tamaño fijo. |
+| **px** | Esta etiqueta se refiere a los píxeles que, aunque son absolutos (0.26mm), también son relativos a la densidad de la pantalla. |
+| **cm** | Se refiere a los centímetros. |
+| **mm** | Hace referencia a los milímetros. |
+| **Q** | Se refiere a un cuarto de la unidad mm. 1q=0.248mm. |
+| **in** | Hace referencia a las pulgadas, que son iguales a 2.54cm.  |
+| **pt** | Un punto es igual a 1/72 de una pulgada o 0.35mm.  |
+| **pc** | Una pica es igual a 12 puntos, o sea 4.23mm. |
+
+
+## Unidades Relativas
+| **Unidades**      | **Descripción**                                      |
+|-------------------|------------------------------------------------------|
+| %                 | Unidades basadas en el tamaño del padre inmediato.    |
+| em, rem           | Unidades basadas en el tamaño de una tipografía.      |
+| ex, rex           | Unidades basadas en la altura de una minúscula.       |
+| cap, rcap         | Unidades basadas en la altura de una mayúscula.       |
+| ch, rch           | Unidades basadas en las medidas de un carácter europeo.|
+| ic, ric           | Unidades basadas en las medidas de un carácter CJK.   |
+| lh, rlh           | Unidades basadas en el interlineado.                 |
+
+## Relativas al Viewport
+| **Unidades**      | **Descripción**                                        |
+|-------------------|--------------------------------------------------------|
+| vw, vh, vmin, vmax, vi, vb | Unidades basadas en la región visible del navegador.  |
+| **vw** | Como sigla de la unidad en inglés viewport width, esta unidad es relativa al ancho del viewport. |
+| **vh** | Como sigla de la unidad en inglés viewport height, esta unidad es relativa a la altura del viewport. |
+| **vmin** | Esta unidad vmin css , también conocida como viewport minimum, es relativa al factor que sea más pequeño entre el ancho y al alto del viewport. |
+| **vmax** | Es relativa al factor que sea más grande entre el ancho y el alto del viewport. Junto con vmin, esta unidad puede ser muy útil si queremos que nuestros diseños sean flexibles y se adapten al tamaño visible de la página web. |
+| svw, svh, svmin, svmax, svi, svb | Idem, en pantallas pequeñas (small viewport).  |
+| lvw, lvh, lvmin, lvmax, lvi, lvb | Idem, en pantallas grandes (large viewport).  |
+| dvw, dvh, dvmin, dvmax, dvi, dvb | Idem, en pantallas dinámicas (dynamic viewport).|
+
+## Relativas al Contenedor
+| **Unidades**      | **Descripción**                                       |
+|-------------------|-------------------------------------------------------|
+| cqw, cqh, cqmin, cqmax, cqi, cqb | Unidades basadas en un contenedor padre específico. |
+
+## Relativas al Grid
+| **Unidades**      | **Descripción**                                       |
+|-------------------|-------------------------------------------------------|
+| fr                | Unidad basada en la fracción restante (sólo para grids).|
+
+## Unidades de Dirección
+| **Unidades**      | **Descripción**                                       |
+|-------------------|-------------------------------------------------------|
+| deg, grad, rad, turn | Unidades para indicar una dirección.                 |
+
+## Unidades de Duración
+| **Unidades**      | **Descripción**                                       |
+|-------------------|-------------------------------------------------------|
+| s, ms             | Unidades para indicar un tiempo concreto.            |
+
+## Unidades de Frecuencia
+| **Unidades**      | **Descripción**                                       |
+|-------------------|-------------------------------------------------------|
+| hz, khz           | Unidades para indicar una frecuencia.                |
+
+## Unidades de Resolución
+| **Unidades**      | **Descripción**                                       |
+|-------------------|-------------------------------------------------------|
+| dpi, dpcm, dppx   | Unidades para indicar resoluciones.                  |
