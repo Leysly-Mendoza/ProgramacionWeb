@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter y la piedra Filosofal</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding: 0; 
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .grid-container{
+        background-color: rgb(148, 54, 236);
+        display: grid;
+        width: 100vw;
+        min-height: 100vh;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 10% 90%;
+        background-color: aliceblue;
+        grid-template-areas: "enca enca enca"
+                            "barra1 conte barra2"
+    }
+    /*flex box en enca, usar cal(): calcula tamañaos sumas, restas, llamar layout*/
+    .one{
+        grid-area: enca;
+        background-color: rgb(148, 54, 236);
+        /*border-top: 2px solid black;*/
+        text-align: center;
+        font-size: 60px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 25px;
+        /*position: fixed;
+        width: 100%;
+        z-index: 1000;*/
+    }
+    .two{
+        grid-area: barra1;
+        background-color: rgb(166, 166, 244);
+        /*border: 2px solid black;*/
+        display: flex;  
+        justify-content: space-between; 
+        align-items: center;  
+        height: 100%; 
+        flex-direction: column; 
+    }
+    .three{
+        grid-area: conte;
+        background-color: rgb(180, 116, 239);
+        /*border: 2px solid black;*/
+        text-align: center;
+        font-size: 25px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 40px;
+        line-height: 1.7em;
+        clear:both;
+    }
+   
+    .four{
+        grid-area: barra2;
+        background-color:rgb(166, 166, 244);
+        /*border-bottom: 2px solid black;*/
+        align-items: center;
+        padding: 20px;
+        display: block;
+        padding: 20px;
+    }
+    .four img {
+    width: 220px;
+    height: 400px;
+    margin: 12%;
+    position: sticky;
+    top: 10px;
+    align-items: center;  
+    border: 5px dashed purple;
+    }
+    .imagen-flotante {
+    float: right;
+    margin-right: 15px;
+    width: 300px;
+    }
+    .cajaFlex{
+    height: calc((100% / 3) - 20px); 
+    border: 5px dashed purple;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;  
+    text-align: center;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .cajaFlex img
+    {
+    width: 170px;
+    height: 120px;
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <div class="one">HARRY POTTER Y LA PIEDRA FILOSOFAL</div>
+        
+        
+        <div class="two">
+            <div class="cajaFlex" id="cajaFlex1">
+                <h1>¡Dato curioso del libro!</h1>
+                <p>
+                    El manuscrito fue rechazado por 12 editoriales antes de ser aceptado por Bloomsbury. J.K. Rowling pasó años buscando una editorial que creyera en su historia.
+                </p>
+            </div>
+            <div class="cajaFlex" id="cajaFlex2">
+                <h1>Hermione</h1>
+                <p>El personaje de Hermione Granger está inspirado en la infancia de J.K. Rowling. Al igual que Hermione, Rowling era una alumna muy aplicada y amante de los libros.</p>
+                <img src="hermione.png" alt="Hermione">
+            </div>
+            <div class="cajaFlex" id="cajaFlex3">
+                <h1>Sobre la película</h1>
+                <p>La adaptación cinematográfica de "Harry Potter y la piedra filosofal" se estrenó en 2001, recaudando más de $970 millones de dólares en todo el mundo, convirtiéndose en una de las películas más taquilleras de la historia.</p>
+            </div>    
+        </div>
+        <div class="three">
+            <img src="HP1-1.jpg" alt="Elenco" class="imagen-flotante" />
+            <p>
+                "Harry Potter y la piedra filosofal" es el primer libro de la famosa serie de fantasía escrita por la autora británica J.K. Rowling. Fue publicado por primera vez en 1997 y es conocido en algunas regiones (como en Estados Unidos) como "Harry Potter and the Sorcerer's Stone".
+            </p>
+            <p>
+                La historia sigue a un joven huérfano llamado Harry Potter, quien descubre en su undécimo cumpleaños que es un mago. Vive con sus malvados tíos, los Dursley, hasta que recibe una carta que lo invita a asistir al Colegio Hogwarts de Magia y Hechicería.
+
+                En Hogwarts, Harry hace nuevos amigos, como Ron Weasley y Hermione Granger, y descubre que sus padres murieron a manos del malvado mago Lord Voldemort. Harry también se entera de que sobrevivió al ataque de Voldemort cuando era bebé, lo que lo convirtió en una figura famosa en el mundo mágico.
+            </p>
+            <img src="HP1-3.jpg" alt="Elenco" class="imagen-flotante" />
+            <p>
+                El libro explora temas como la amistad, la valentía, la lucha entre el bien y el mal, y el descubrimiento de uno mismo. También introduce el mundo mágico, incluyendo criaturas, hechizos y lugares como el castillo de Hogwarts.
+
+                "Harry Potter y la piedra filosofal" es el comienzo de una saga que sigue a Harry a lo largo de siete libros, enfrentando desafíos cada vez más difíciles mientras descubre la verdad sobre su pasado y su conexión con Voldemort.
+            </p>
+        </div>
+        <div class="four">
+            <img src="HP1.jpg" alt="Harry Potter y la piedra filosofal">
+            <img src="HP1-2.jpg" alt="Harry Potter y la piedra filosofal">
+        </div> 
+    </div>
+
+</body>
+</html>
