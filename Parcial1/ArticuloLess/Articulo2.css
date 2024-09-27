@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.grid-container {
+  background-color: #9436ec;
+  display: grid;
+  width: 100vw;
+  min-height: 100vh;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 10% 90%;
+  background-color: brown;
+  /*anidar*/
+  grid-template-areas: "enca enca enca" "barra1 conte barra2";
+}
+.grid-container h1 {
+  text-justify: distribute;
+}
+.grid-container p {
+  text-justify: inter-word;
+}
+/*flex box en enca, usar cal(): calcula tamañaos sumas, restas, llamar layout*/
+.one {
+  grid-area: enca;
+  background-color: #9436ec;
+  /*border-top: 2px solid black;*/
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 25px;
+  /*position: fixed;
+    width: 100%;
+    z-index: 1000;*/
+}
+.two {
+  grid-area: barra1;
+  background-color: #a6a6f4;
+  /*border: 2px solid black;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.three {
+  grid-area: conte;
+  background-color: #b474ef;
+  /*border: 2px solid black;*/
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 40px;
+  line-height: 1.7em;
+  clear: both;
+}
+.four {
+  grid-area: barra2;
+  background-color: #a6a6f4;
+  /*border-bottom: 2px solid black;*/
+  align-items: center;
+  display: block;
+  padding: 20px;
+}
+.four img {
+  width: 220px;
+  height: 400px;
+  margin: 12%;
+  position: sticky;
+  top: 10px;
+  align-items: center;
+  border: 5px dashed purple;
+}
+.imagen-flotante {
+  float: right;
+  margin-right: 15px;
+  width: 300px;
+}
+.cajaFlex {
+  height: calc((100% / 3) - 20px);
+  border: 5px dashed purple;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cajaFlex img {
+  width: 170px;
+  height: 120px;
+}
