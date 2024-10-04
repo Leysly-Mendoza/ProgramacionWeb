@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+    }
+    table
+    {
+
+    }
+    table, td{
+        border: 2px solid blue;
+        border-collapse: collapse;
+    }
+    tbody > tr:nth-child(odd)
+    {
+        background-color: violet;
+    }
+    tbody > tr:hover
+    {
+        background-color: black;
+        color:white;
+    }
+    tbody > tr td:active
+    {
+        background-color: blue;
+        color:white;
+    }
+    @media screen and (max-width:500px)
+    {
+        table, tbody,thead, tr,td{
+            display:block;
+        }
+        tbody tr>td:first-child{
+            background-color: blue;
+            color:aquamarine;
+            text-align: center;
+        }
+    }
+/*hacerla responsiva, ramper el diseño
+Poner pseudoselectores, horario, hacerla responsiva*/
+</style>
+<body>
+    <table>
+        <head>
+            <tr>
+                <td>Materia</td>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miercoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+            </tr>
+        </head>
+        <tbody>
+           <tr>
+            <td>Web</td>
+            <td>7-8</td>
+            <td>7-8</td>
+           </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Clases</title>
+    <style>
+          *
+    {
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+    }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #007bff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Color azul para la primera columna */
+        td:first-child {
+            background-color: #007bff; /* Color azul */
+            color: white; /* Texto en blanco para mejor contraste */
+            border: 2px solid blue;
+        }
+     
+        /* Pseudoseletores */
+        tr:nth-child(even) {
+            background-color: #3e86cff2;
+        }
+
+        tr:hover {
+            background-color: #1fd7f8;
+        }
+
+        /* Media query */
+        @media (max-width: 600px) {
+            table, th, td {
+                display: block;
+                width: 100%;
+            }
+
+            th {
+                display: none; /* Oculta los encabezados en pantallas pequeñas */
+            }
+
+            tr {
+                margin-bottom: 15px;
+            }
+
+            td {
+                text-align: left;
+                padding-left: 50%; /* Espacio para simular una etiqueta */
+                position: relative;
+            }
+
+            td::before {
+                content: attr(data-label); /* Muestra el nombre de la columna */
+                position: absolute;
+                left: 10px;
+                width: 40%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Horario de Clases</h1>
+    <table>
+        <thead>
+            <tr> 
+                <td>Materia</td>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miercoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Materia">Programación Web</td>
+                <td data-label="Lunes">07:00 - 08:00</td>
+                <td data-label="Martes">07:00 - 08:00</td>
+                <td data-label="Miercoles">07:00 - 08:00</td>
+                <td data-label="Jueves">07:00 - 08:00</td>
+                <td data-label="Viernes">07:00 - 08:00</td>
+            </tr>
+            <tr>
+                <td data-label="Materia">Programación Lógica y Funcional</td>
+                <td data-label="Lunes">12:00 - 13:00</td>
+                <td data-label="Martes">12:00 - 13:00</td>
+                <td data-label="Miercoles">12:00 - 13:00</td>
+                <td data-label="Jueves">12:00 - 13:00</td>
+                <td data-label="Viernes"></td>
+            </tr>
+            <tr>
+                <td data-label="Materia">Sistemas Programables</td>
+                <td data-label="Lunes">13:00 - 14:00</td>
+                <td data-label="Martes">13:00 - 14:00</td>
+                <td data-label="Miercoles">13:00 - 14:00</td>
+                <td data-label="Jueves">13:00 - 14:00</td>
+                <td data-label="Viernes"></td>
+            </tr>
+            <tr>
+                <td data-label="Materia">Redes de computadoras</td>
+                <td data-label="Lunes">08:00 - 09:00</td>
+                <td data-label="Martes">08:00 - 09:00</td>
+                <td data-label="Miercoles">08:00 - 09:00</td>
+                <td data-label="Jueves">08:00 - 09:00</td>
+                <td data-label="Viernes">08:00 - 09:00</td>
+            </tr>
+            <tr>
+                <td data-label="Materia">Tópicos Avanzados de Programación</td>
+                <td data-label="Lunes">14:00 - 15:00</td>
+                <td data-label="Martes">14:00 - 15:00</td>
+                <td data-label="Miercoles">14:00 - 15:00</td>
+                <td data-label="Jueves">14:00 - 15:00</td>
+                <td data-label="Viernes">14:00 - 15:00</td>
+            </tr>
+            <tr>
+                <td data-label="Materia">Gestión de Proyectos de Software</td>
+                <td data-label="Lunes">09:00 - 10:00</td>
+                <td data-label="Martes">09:00 - 10:00</td>
+                <td data-label="Miercoles">09:00 - 10:00</td>
+                <td data-label="Jueves">09:00 - 10:00</td>
+                <td data-label="Viernes"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
