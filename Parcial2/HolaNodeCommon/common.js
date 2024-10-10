@@ -1,6 +1,5 @@
-// packcage.js
 function hola() {
-    return "Hola, mundo!";
+    return "Hola mundo!";
 }
 
 module.exports = { hola };
