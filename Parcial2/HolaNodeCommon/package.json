@@ -1,5 +1,5 @@
 {
-    "name": "HolaModuleCommon",
+    "name": "HolaNodeCommon",
     "version": "1.0.0",
     "description": "Un ejemplo",
     "main": "index.js",

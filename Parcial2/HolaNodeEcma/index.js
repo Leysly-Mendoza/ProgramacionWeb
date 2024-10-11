@@ -1,5 +1,3 @@
-//console.log("Hola Mundo Index");
-// index.js
-const saludar = require('./hola.js');
+import mensaje from './Ecma.js';
 
-saludar(); // Esto imprimirá "Hola" en la consola
+console.log(mensaje);
