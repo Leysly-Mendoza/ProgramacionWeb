@@ -1,5 +1,12 @@
-function hola() {
-    return "Hola mundo!";
-}
+// common.js
+const cowsay = require('cowsay');  
+console.log("Hola Mundo");
 
-module.exports = { hola };
+
+console.log(
+  cowsay.say({
+    text: "Hola Mundo",
+    e: "oO", // Ojos
+    T: "U "  // Lengua
+  })
+);
