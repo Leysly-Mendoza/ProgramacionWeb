@@ -1,4 +1,4 @@
-// common.js
+// common
 const cowsay = require('cowsay');  
 console.log("Hola Mundo");
 

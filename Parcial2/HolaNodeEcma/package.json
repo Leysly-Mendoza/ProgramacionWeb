@@ -1,7 +1,7 @@
 {
     "name": "HolaNodeEcma",
     "version": "1.0.0",
-    "description": "",
+    "description": "Ejemplo",
     "type": "module",
     "main": "index.js"
   }
