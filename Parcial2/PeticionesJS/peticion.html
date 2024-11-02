@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter Characters</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Harry Potter Characters</h1>
+  <div class="button-container">
+    <button onclick="fetchCharacters()">Fetch</button>
+    <button onclick="CharactersAsync()">Async/Await</button>
+    <button onclick="CharactersXHR()">XMLHttpRequest</button>
+    <button onclick="CharactersJQuery()">jQuery</button>
+    <button onclick="CharactersAxios()">Axios</button>
+  </div>
+  <div id="character-list"></div>
+
+  <!-- Librerías de Axios y jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="peticiones.js"></script>
+</body>
+</html>
