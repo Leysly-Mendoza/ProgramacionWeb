@@ -89,7 +89,7 @@ const popularCharacters = [
       .catch(error => console.error("Error:", error));
   }
   
-  //Datos en el HTML
+  
   function displayCharacters(characters) {
     const characterList = document.getElementById("character-list");
     characterList.innerHTML = ""; 
